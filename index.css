@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 350px;
+    height: 700px;
+    background-color:rgba(179, 171, 171, 0.628);
+    border-radius: 10px;
+    margin:100px auto;
+    border: 2px solid black;
+    border: none;
+    position: relative;
+}
+.circle{
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    border-radius: 50%;
+    background-color: white;
+    position:absolute;
+    top: 20px;
+    left: 50px; 
+}
+.inner-circle{
+    position: absolute;
+    width: 13px;
+    height: 225px;
+    background-color: black;
+    border-radius: 5px;
+    left: 110px;
+    top: 7px;
+    animation: blade 0.9s linear infinite;
+    transform-origin: center;
+}
+ @keyframes blade{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+         }
+
+.stroke1{
+    position: absolute;
+    background-color: grey;
+    width: 15px;
+    height: 130px;
+    top: 270px;
+    left:170px;
+}
+.stroke-blue{
+    position: absolute;
+    background-color: rgb(7, 88, 169);
+    width: 25px;
+    height: 110px;
+    top: 410px;
+    left: 165px;
+    border-radius: 5px;
+}
+.btn{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.757);
+    width: 120px;
+    height: 70px;
+    top: 525px;
+    left: 120px;
+    border-radius: 5px;
+}
+.btn button{
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(7, 88, 169);
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+
